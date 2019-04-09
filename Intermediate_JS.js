@@ -117,7 +117,7 @@ const justCoolStuff = (arr1, arr2) => {
   })
 }
 
-//if food is vegan
+//if food is vegan (array contains objects)
 const isTheDinnerVegan = arr => {
   let vegan = true;
   arr.forEach(function(food) {
@@ -126,4 +126,9 @@ const isTheDinnerVegan = arr => {
     }
   })
   return vegan;
+}
+
+// sort by num of teeth (array contains objects)
+const sortSpeciesByTeeth = arr => {
+  return arr.sort(function(a, b) {return a.numTeeth - b.numTeeth});
 }
