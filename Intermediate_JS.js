@@ -132,3 +132,8 @@ const isTheDinnerVegan = arr => {
 const sortSpeciesByTeeth = arr => {
   return arr.sort(function(a, b) {return a.numTeeth - b.numTeeth});
 }
+
+//look for keys in an array of strings
+const findMyKeys = arr => {
+  return arr.indexOf('keys');
+}
